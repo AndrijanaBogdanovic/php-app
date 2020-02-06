@@ -4,6 +4,7 @@ require 'konekcija.php';
 
 $email=$_POST['email'];
 $lozinka=$_POST['lozinka'];
+//ukoliko yelite da se prijavite kao admin potrebno je da se prijavite sa email-om i lozinkom kao u if uslovu
 if(($email=='admin@gmail.com')&&($lozinka=='admin'))
 {
   header("Location: ../admin.php");
